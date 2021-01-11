@@ -1,0 +1,131 @@
+* {
+  user-select: none;
+}
+
+body, html, #root, .container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.sky {
+  height: 55%;
+  min-width: 550px;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_sky.jpg');
+  background-size: contain;
+}
+
+.earth-bg {
+  height: 45%;
+  background-color: #ec475c;
+}
+
+.earth {
+  height: 30%;
+  min-width: 950px;
+  background: #ec475c url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_earth.jpg');
+  background-size: contain;
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.buttons > button {
+  padding: 10px;
+  width: 100px;
+}
+.buttons > button:hover {
+  background-color: rgb(236, 227, 215);
+  outline: none;
+  cursor: pointer;
+}
+.buttons > button:active {
+  border-style: none;
+}
+.buttons > button:focus {
+  outline: none;
+}
+
+.alice-queen {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+  width: 454px;
+  height: 390px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#alice {
+  width: 100%;
+}
+
+.foreground1, .foreground2, .background1, .background2 {
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  width: 100%;
+}
+
+.foreground1, .foreground2 {
+  z-index: 2;
+}
+
+#bush {
+  position: absolute;
+  bottom: 13%;
+  left: 20%;
+}
+
+#white-rook-upright {
+  position: absolute;
+  bottom: 6%;
+  left: 60%;
+}
+
+#palm3 {
+  position: absolute;
+  bottom: -14%;
+}
+
+
+#red-pawn {
+  position: absolute;
+  bottom: 45%;
+  left: 15%;
+}
+
+#red-knight {
+  position: absolute;
+  bottom: 35%;
+  left: 65%;
+}
+
+#palm2 {
+  position: absolute;
+  bottom: 30%;
+  left: 90%;
+}
+
+#pawn-upright {
+  position: absolute;
+  bottom: 20%;
+  left: 23%;
+}
+
+#palm1 {
+  position: absolute;
+  bottom: 40%;
+  left: 35%;
+}
+
+#white-rook {
+  position: absolute;
+  bottom: 35%;
+  left: 70%;
+}
