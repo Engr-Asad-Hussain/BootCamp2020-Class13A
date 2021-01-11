@@ -4,8 +4,7 @@ import Foreground2 from './component/Foreground2';
 import Background1 from './component/Background1';
 import Background2 from './component/Background2';
 import Buttons from './component/Buttons';
-import react, { useState } from 'react';
-import Conditions from './Conditions';
+import { useState } from 'react';
 import './App.css';
 
 function App() {

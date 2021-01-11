@@ -54,6 +54,7 @@ function Buttons({ playState }) {
                     setBtn( false );
                 }
             }>Pause</button>
+            <p>Double Click to go Faster & wheel's movement to go Slower</p>
         </div>
     );
 }
