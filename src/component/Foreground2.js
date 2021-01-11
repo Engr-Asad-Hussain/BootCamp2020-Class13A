@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import useWebAnimations from '@wellyshen/use-web-animations';
 
 function Foreground2({ playState }) {
