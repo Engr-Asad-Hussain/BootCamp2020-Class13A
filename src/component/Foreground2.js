@@ -13,11 +13,11 @@ function Foreground2({ playState }) {
             duration: 20000,
             iterations: Infinity
         },
+        onReady: () => {
+            fg2.getAnimation().pause();
+            playState[0].push(fg2);
+        }
     });
-    useEffect(()=>{
-        fg2.getAnimation().pause();
-        playState[0].push(fg2);
-    }, []);
 
     return (
         <div className="foreground2" ref={fg2.ref}>

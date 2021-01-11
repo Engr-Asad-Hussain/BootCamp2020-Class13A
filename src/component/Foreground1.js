@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import useWebAnimations from '@wellyshen/use-web-animations';
 
 function Foreground1({ playState }) {
@@ -10,12 +10,12 @@ function Foreground1({ playState }) {
         timing: {
             duration: 22000,
             iterations: Infinity
+        },
+        onReady: () => {
+            fg1.getAnimation().pause();
+            playState[0].push(fg1);
         }
     });
-    useEffect(()=>{
-        fg1.getAnimation().pause();
-        playState[0].push(fg1);
-    }, [])
 
     return (
         <div className="foreground1" ref={fg1.ref}>

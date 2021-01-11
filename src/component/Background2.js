@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import useWebAnimations from '@wellyshen/use-web-animations';
 
 function Background2({ playState }) {
@@ -12,12 +12,12 @@ function Background2({ playState }) {
         timing: {
             duration: 36000,
             iterations: Infinity
+        },
+        onReady: () => {
+            bg2.getAnimation().pause();
+            playState[0].push(bg2);
         }
     });
-    useEffect(()=>{
-        bg2.getAnimation().pause();
-        playState[0].push(bg2);
-    }, []);
 
     return (
         <div className="background2" ref={bg2.ref}>

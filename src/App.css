@@ -50,6 +50,9 @@ body, html, #root, .container {
 .buttons > button:focus {
   outline: none;
 }
+.buttons > p {
+  color: aliceblue;
+}
 
 .alice-queen {
   position: absolute;
