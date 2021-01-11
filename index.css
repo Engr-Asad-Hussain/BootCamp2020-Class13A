@@ -1,0 +1,154 @@
+* {
+    user-select: none;
+}
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  /* overflow is used to stop scrolling */
+}
+
+.container {
+    background-color: #ec475c;
+    height: 100%;
+}
+
+.sky {
+    height: 50%;
+    min-width: 550px;
+    background-image: url('./images/bg_sky.jpg');
+    background-size: contain;
+}
+
+.earth-bg {
+    background-color: #ec475c;
+    height: 50%;
+}
+
+.earth {
+    height: 25%;
+    background-image: url('./images/bg_earth.jpg');
+    background-size: cover;
+}
+
+.alice-queen-cont {
+    position: absolute;
+    bottom: 10%; left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+    width: 454px;
+    height: 390px;
+    z-index: 1;
+}
+
+.buttons {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.buttons > button {
+    padding: 10px;
+    width: 90px;
+}
+.buttons > button:hover {
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(221, 221, 223);
+}
+.buttons > p {
+    color: white;
+    font-size: large;
+}
+
+/*----------------------------FOREGROUND-1-STARTS---------------*/
+.foreground1 {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+#bush {
+    position: absolute;
+    bottom: 8%;
+    left: 20%;          /* 0 */
+    /*z-index: 0; */
+}
+
+#rook-upright {
+    position: absolute;
+    bottom: 1%;
+    left: 60%;         /* 40% */
+}
+/*----------------------------FOREGROUND-1--ENDS---------------*/
+
+/*----------------------------BACKGROUND-1-START--------------*/
+.background1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#red-pawn {
+    position: absolute;
+    bottom: 40%;
+    left: 15%;      /* 0 */
+}
+
+#red-knight {
+    position: absolute;
+    bottom: 30%;
+    left: 65%;     /* 50% */
+}
+
+#palm2 {
+    position: absolute;
+    bottom: 25%;
+    left: 90%;  /* 75% */
+}
+/*----------------------------BACKGROUND-1-ENDS--------------*/
+
+/*----------------------------BACKGROUND-2-START--------------*/
+.background2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#pawn-upright {
+    position: absolute;
+    bottom: 15%;
+    left: 23%;
+}
+
+#palm1 {
+    position: absolute;
+    bottom: 35%;
+    left: 35%;
+}
+
+#white-rook {
+    position: absolute;
+    bottom: 30%;
+    left: 70%;
+}
+/*----------------------------BACKGROUND-1-ENDS--------------*/
+
+/*----------------------------FOREBROUND-2-STARTS------------*/
+.foreground2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+#palm3 {
+    position: absolute;
+    bottom: -14%;
+}
+/*----------------------------FOREGROUND-2-ENDS--------------*/
