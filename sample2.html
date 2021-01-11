@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Animations with Steps</title>
+    <style>
+        .alice {
+            width: 454px;
+            height: 391px;
+            margin: 2% auto;
+            background-image: url('./alice.png');
+            animation: play 0.8s steps(7) infinite
+        }
+        @keyframes play {
+            100% { background-position-y: 2741px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animations with steps</h1>
+    <div class="alice"></div>
+</body>
+</html>

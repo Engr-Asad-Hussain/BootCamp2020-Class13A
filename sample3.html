@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .parent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #cbdee0;
+            width: 190px;
+            height: 250px;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img id="monster" src="./monster.png" />
+    </div>
+    <script>
+        let element = document.querySelector('#monster');
+        element.animate([
+            { transform: 'translateX(0)' },
+            { transform: 'translateX(-100%)' }
+        ], {
+            easing: 'steps(10, end)',
+            direction: "reverse",
+            duration: 650,
+            iterations: Infinity
+        });
+    </script>
+</body>
+</html>
